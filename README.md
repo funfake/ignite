@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ignite
+
+Ignite is a fun wbesite that **generates random startup concepts** to train yourself to pitch new business ideas.
+
+This project has been finalized over the course of 5 hours. It is based on Next.js and Mistral. The UI has been made with Shadcn/ui, TailwindCSS and Lucide Icons. It is part of my application to work for Mistral AI.
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repo and open it in your favorite code editor.
+
+### Add your Mistral API key
+
+Create a `.env.local` file and put the following environment variable:
+
+```
+NEXT_PUBLIC_MISTRAL_API_KEY=your_mistral_api_key
+```
+
+You can obtain an API key by heading to [https://console.mistral.ai/api-keys/](https://console.mistral.ai/api-keys/)
+
+### Install packages and run the dev the server
+
+Run the following commands.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# install packages
+yarn
+# run the development server
+yarn dev -p 3000
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Make a production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To make sure there are no errors during compilation and server side rendering, execute the following command.
 
-## Learn More
+```bash
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+If there are no errors, you're ready to deploy. Never share your api credentials.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Don't forget to add the Mistral API key to Vercel environment variables for production builds.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Author
+
+William BRISA, created and last edited 15/01/2025
