@@ -23,12 +23,13 @@ export default function About() {
           train yourself to pitch new business ideas.
         </p>
         <p className="">
-          This project has been finalized over the course of 7 hours. It is
-          based on Next.js and Mistral AI. The UI has been made with Shadcn/ui,
-          TailwindCSS and Lucide Icons.
+          This project is opensource and has been finalized over the course of 7
+          hours. It is based on Next.js and Mistral AI. The UI has been made
+          with Shadcn/ui, TailwindCSS and Lucide Icons. Global state is handled
+          by Zustand.
         </p>
         <p className="">
-          It is part of my application to work for Mistral AI. The repo is
+          It is part of my job application to work at Mistral AI. The repo is
           available here:{" "}
           <a
             href="https://github.com/funfake/ignite"

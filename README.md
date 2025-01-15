@@ -1,6 +1,6 @@
 # Ignite 🛗
 
-Ignite is a fun wbesite that **generates random startup concepts** to train yourself to pitch new business ideas. It is part of my job application to work at Mistral AI.
+Ignite is a fun website that **generates random startup concepts** to train yourself to pitch new business ideas. It is part of my job application to work at Mistral AI.
 
 ![Ignite Banner](banner.png)
 
