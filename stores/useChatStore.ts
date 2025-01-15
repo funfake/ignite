@@ -32,7 +32,7 @@ export const useChatStore = create<ChatState>((set) => ({
   market_size: "",
   text_color: "#ffffff", // Default colors
   background_color: "#09090b",
-  name: "Pitch a random startup", // Default title to display before the first generation
+  name: "", // Default title to display before the first generation
   generateStartup: async () => {
     console.log("Generating startup...");
     try {
