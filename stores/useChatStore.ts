@@ -1,4 +1,10 @@
-// import { AssistantMessage } from "@mistralai/mistralai/models/components";
+// stores/useChatStore.ts
+// A store to manage the generated chat data from MistralAI.
+// contains data that are displayed dynamically in the components.
+
+// generateStartup: function that calls the Mistral API Agent,
+//                  expects a response in JSON format and updates the chat store data accordingly.
+// resetAll: function to reset all the chat store data.
 import { Mistral } from "@mistralai/mistralai";
 import { create } from "zustand";
 
@@ -14,7 +20,9 @@ interface ChatState {
   resetAll: () => void;
 }
 
+// API key from the environment variables
 const apiKey = process.env.NEXT_PUBLIC_MISTRAL_API_KEY;
+// Create a new Mistral client
 const client = new Mistral({ apiKey: apiKey });
 
 export const useChatStore = create<ChatState>((set) => ({
@@ -22,11 +30,9 @@ export const useChatStore = create<ChatState>((set) => ({
   industry: "",
   first_clients: "",
   market_size: "",
-  // text_color: "#09090b",
-  // background_color: "#ffffff",
-  text_color: "#ffffff",
+  text_color: "#ffffff", // Default colors
   background_color: "#09090b",
-  name: "Pitch a random startup",
+  name: "Pitch a random startup", // Default title to display before the first generation
   generateStartup: async () => {
     console.log("Generating startup...");
     try {
@@ -79,7 +85,7 @@ export const useChatStore = create<ChatState>((set) => ({
       first_clients: "",
       market_size: "",
       name: "Loading...",
-      text_color: "#09090b",
+      text_color: "#09090b", // Default colors are switched to highlight the loading state
       background_color: "#ffffff",
     });
   },

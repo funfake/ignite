@@ -1,5 +1,10 @@
+// components/context-cards.tsx
+// This file displays cards containing informations about the generated startup.
+// It uses the content stored in the chat store and gets updated dynamically if the store is modified from elsewhere.
+// Starting point generated with the help of v0.dev
 "use client";
 import { useChatStore } from "@/stores/useChatStore";
+import Card from "./cards";
 
 interface CardData {
   title: string;
@@ -8,16 +13,6 @@ interface CardData {
 
 export default function ContextCards() {
   const { problem, first_clients, market_size, text_color } = useChatStore();
-
-  const Card: React.FC<CardData> = ({ title, body }) => (
-    <div
-      className="flex-shrink-0 w-64 p-4 bg-transparent border-2 mr-4 last:mr-0"
-      style={{ borderColor: text_color }}
-    >
-      <h2 className="text-base font-bold mb-2">{title}</h2>
-      <p className="text-sm">{body}</p>
-    </div>
-  );
 
   const cardData: CardData[] = [
     {
@@ -34,17 +29,18 @@ export default function ContextCards() {
     },
   ];
 
+  // we don't want to render the cards if they contain no data
   if (!problem || !first_clients || !market_size) {
     return null;
   }
 
   return (
-    <div className="w-full overflow-x-auto p-4">
-      <div className="flex">
-        {cardData.map((card, index) => (
-          <Card key={index} {...card} />
-        ))}
-      </div>
+    <div className="flex flex-col lg:flex-row p-4">
+      {/* <div className="flex"> */}
+      {cardData.map((card, index) => (
+        <Card text_color={text_color} key={index} {...card} />
+      ))}
+      {/* </div> */}
     </div>
   );
 }

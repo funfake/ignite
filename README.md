@@ -1,8 +1,15 @@
 # Ignite
 
-Ignite is a fun wbesite that **generates random startup concepts** to train yourself to pitch new business ideas.
+Ignite is a fun wbesite that **generates random startup concepts** to train yourself to pitch new business ideas. It is part of my application to work for Mistral AI.
 
-This project has been finalized over the course of 5 hours. It is based on Next.js and Mistral. The UI has been made with Shadcn/ui, TailwindCSS and Lucide Icons. It is part of my application to work for Mistral AI.
+This project has been finalized over the course of 5 hours. It is based on **Next.js** and **Mistral AI**. The UI has been made with **Shadcn/ui**, **TailwindCSS** and **Lucide Icons**.
+
+## File Structure
+
+- Pages in `/app`
+- Components in `/components`
+- AI API calls and data store in `/store`
+- Utils in `/lib`
 
 ## Getting Started
 
@@ -39,7 +46,7 @@ To make sure there are no errors during compilation and server side rendering, e
 yarn build
 ```
 
-If there are no errors, you're ready to deploy. Never share your api credentials.
+If there are no errors, you're ready to deploy. Never share your API credentials.
 
 ## Deploy on Vercel
 

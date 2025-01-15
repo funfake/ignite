@@ -1,3 +1,6 @@
+// components/footer.tsx
+// Footer component used in the pages of the website.
+// Using icons from Lucide.
 import { AppWindowMac, Book, Sparkles } from "lucide-react";
 import Link from "next/link";
 

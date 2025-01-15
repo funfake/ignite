@@ -1,3 +1,4 @@
+// app/about/page.tsx
 import Footer from "@/components/footer";
 import { buttonVariants } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
