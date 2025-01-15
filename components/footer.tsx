@@ -30,7 +30,7 @@ export default function Footer() {
         rel="noopener noreferrer"
       >
         <Sparkles size={16} />
-        MistralAI
+        Made with MistralAI
       </a>
     </footer>
   );

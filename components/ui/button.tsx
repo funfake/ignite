@@ -23,7 +23,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        generate: "font-medium font-[family-name:var(--font-geist-mono)]",
+        generate: "font-semibold font-[family-name:var(--font-geist-mono)]",
       },
       size: {
         default: "h-9 px-4 py-2",

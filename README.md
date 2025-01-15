@@ -2,7 +2,7 @@
 
 Ignite is a fun wbesite that **generates random startup concepts** to train yourself to pitch new business ideas. It is part of my application to work for Mistral AI.
 
-This project has been finalized over the course of 5 hours. It is based on **Next.js** and **Mistral AI**. The UI has been made with **Shadcn/ui**, **TailwindCSS** and **Lucide Icons**.
+This project has been finalized over the course of 5 hours. It is based on **Next.js** and **Mistral AI**. The UI has been made with **Shadcn/ui**, **TailwindCSS** and **Lucide Icons**. Global state is handled by **Zustand**.
 
 ## File Structure
 
