@@ -19,12 +19,12 @@ export default function About() {
           <h1 className="title text-center">About this project</h1>
         </div>
         <p className="">
-          Ignite is a fun wbesite that generates random startup concepts to
+          Ignite is a fun website that generates random startup concepts to
           train yourself to pitch new business ideas.
         </p>
         <p className="">
-          This project has been finalized over the course of 5 hours. It is
-          based on Next.js and Mistral. The UI has been made with Shadcn/ui,
+          This project has been finalized over the course of 7 hours. It is
+          based on Next.js and Mistral AI. The UI has been made with Shadcn/ui,
           TailwindCSS and Lucide Icons.
         </p>
         <p className="">

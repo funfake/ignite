@@ -20,7 +20,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Ignite | Pitch a random startup",
-  description: "A tool using MistralAI",
+  description: "A tool using Mistral AI",
   icons: {
     icon: "/icon.png",
   },
