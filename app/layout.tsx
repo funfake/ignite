@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import ColorWrapper from "@/components/color-wrapper";
+import { Analytics } from "@vercel/analytics/react";
 
 // custom fonts
 const geistSans = localFont({
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Analytics />
         <ColorWrapper>{children}</ColorWrapper>
       </body>
     </html>

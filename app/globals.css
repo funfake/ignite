@@ -88,6 +88,6 @@ body {
   }
 
   .title {
-    @apply text-5xl font-bold text-center sm:text-left uppercase;
+    @apply text-3xl sm:text-5xl lg:text-6xl font-bold text-center sm:text-left uppercase;
   }
 }

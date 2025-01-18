@@ -34,7 +34,7 @@ export const useChatStore = create<ChatState>((set) => ({
   background_color: "#09090b",
   name: "", // Default title to display before the first generation
   generateStartup: async () => {
-    console.log("Generating startup...");
+    console.log("Generating startup with Mistral AI...");
     try {
       const response = await client.agents.complete({
         agentId: "ag:a57a6b0a:20250115:generate-a-random-startup:cfbbbc08",
@@ -53,11 +53,8 @@ export const useChatStore = create<ChatState>((set) => ({
             .replace(/\\r/g, "")
             .replace(/"(.*?)"/g, (match) => match.replace(/,/g, ""));
 
-          console.log("cleanContent", cleanContent);
-
           const data = JSON.parse(cleanContent);
 
-          console.log("data", data);
           set({
             problem: data.problem,
             industry: data.industry,
